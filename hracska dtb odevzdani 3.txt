@@ -1,0 +1,14 @@
+CREATE TABLE `game_name` (
+    `Id` int PRIMARY KEY AUTO_INCREMENT,
+    `Username` varchar(50) NOT NULL,
+    `Password` varchar(50) NOT NULL,
+    `Email` varchar(100) NOT NULL,
+    `Tel_number` varchar(30) NOT NULL,
+    `Rank/Lvl` enum('Newbie', 'Novice', 'Rookie', 'Beginner', 'Talented', 'Skilled', 'Intermediate', 'Profesional', 'Advanced', 'Expert')DEFAULT 'Newbie',
+    `last_log` datetime on UPDATE CURRENT_TIMESTAMP,
+    `Premium` BIT(1)DEFAULT 0,
+    `micro_trans` int
+)
+
+
+INSERT INTO `game_name`(`Username`, `Password`, `Email`, `Tel_number`,`micro_trans`) VALUES ("Muffin1", "29d847ffce86b63c39a756a25b198751", "Muffin@gmail.com", "123456789", "0"),("Cupcake285", "29d847ffce86b63c39a756a25b198751", "Cupcake@gmail.com", "123456789", "100")
