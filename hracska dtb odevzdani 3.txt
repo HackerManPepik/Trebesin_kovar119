@@ -1,14 +1,65 @@
-CREATE TABLE `game_name` (
-    `Id` int PRIMARY KEY AUTO_INCREMENT,
-    `Username` varchar(50) NOT NULL,
-    `Password` varchar(50) NOT NULL,
-    `Email` varchar(100) NOT NULL,
-    `Tel_number` varchar(30) NOT NULL,
-    `Rank/Lvl` enum('Newbie', 'Novice', 'Rookie', 'Beginner', 'Talented', 'Skilled', 'Intermediate', 'Profesional', 'Advanced', 'Expert')DEFAULT 'Newbie',
-    `last_log` datetime on UPDATE CURRENT_TIMESTAMP,
-    `Premium` BIT(1)DEFAULT 0,
-    `micro_trans` int
-)
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
 
 
-INSERT INTO `game_name`(`Username`, `Password`, `Email`, `Tel_number`,`micro_trans`) VALUES ("Muffin1", "29d847ffce86b63c39a756a25b198751", "Muffin@gmail.com", "123456789", "0"),("Cupcake285", "29d847ffce86b63c39a756a25b198751", "Cupcake@gmail.com", "123456789", "100")
+
+\title{Databaze online hráču}
+\author{Nolč, Kovář, Pírek, Hubený }
+\date{November 2021}
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+    Tento dokument byl vypracovaný společně se všemi členy týmu a
+ověřuje základní znalosti \LaTeX, databází a projektového řízení.
+
+    Tým pracoval samostatně a využíval všechny dostupné materiály
+na Moodle nebo internetu. Veškeré licenční a právní náležitosti jsou
+upraveny v tomto dokumentu.
+    
+    Těm, který není tento dokument určen nemají žádné právo na
+využití obsahu tohoto dokumentu.
+    
+    Veškerá data osob a předmětů jsou smyšlená a nezakládají se na \\
+    skutečnosti.
+\end{abstract}
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Popis databáze}
+    Databáze obsahuje citlivá data o hráčích online her – jména nebo přezdívky hráčů, jejich heslo, jejich e-mail, hry které hrají, doba stravená u dané hry. 
+    
+    Databáze je vytvořena na jazyce MySQL a výužívá veškeré technologické vlastnosti této databaze.
+\newpage
+
+\section{Licenční informace a HW požadavky}
+\subsection{Licence}
+Google Chrome - Chrome Enterprise license
+\newline Mozilla Firefox - Mozilla Public License 2.0
+\subsection{Hardware}
+\subsection{Software}
+Mozilla Firefox, Google Chrome- vyhledávání informací
+\newpage
+
+\section{Enumerizace hodnot}
+\subsection{Normované enumerizace}
+\subsection{Custom enumerizace}
+\newpage
+
+\section{Databázová struktura}
+\subsection{ER diagram}
+\subsection{Tabulka XXX}
+\subsubsection{Struktura}
+\subsubsection{Provázání tabulky}
+\subsection{Tabulka XXX}
+\subsubsection{Struktura}
+\subsubsection{Provázení tabulky}
+\subsection{Tabulka}
+\subsubsection{Struktura}
+\subsubsection{Provázání tabulky}
+
+\end{document}
